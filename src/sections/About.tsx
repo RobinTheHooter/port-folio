@@ -15,81 +15,26 @@ import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import { motion } from "framer-motion";
 import { useRef } from "react";
+import portfolioData from "@/data/portfolio.json";
 
-const toolboxItems = [
-  {
-    title: "JavaScript",
-    iconType: JavaScriptIcon,
-  },
-  {
-    title: "HTML5",
-    iconType: HTMLIcon,
-  },
-  {
-    title: "CSS3",
-    iconType: CSSIcon,
-  },
-  {
-    title: "React",
-    iconType: ReactIcon,
-  },
-  {
-    title: "Chrome",
-    iconType: ChromeIcon,
-  },
-  {
-    title: "GitHub",
-    iconType: GitHubIcon,
-  },
-];
+const toolboxIcons: Record<string, typeof JavaScriptIcon> = {
+  javascript: JavaScriptIcon,
+  html: HTMLIcon,
+  css: CSSIcon,
+  react: ReactIcon,
+  chrome: ChromeIcon,
+  github: GitHubIcon,
+};
 
-const hobbies = [
-  {
-    title: "Drawing",
-    emoji: "🎨",
-    left: "5%",
-    top: "5%",
-  },
-  {
-    title: "Photography",
-    emoji: "📷",
-    left: "50%",
-    top: "5%",
-  },
-  {
-    title: "Gaming",
-    emoji: "🖥️",
-    left: "10%",
-    top: "35%",
-  },
-  {
-    title: "Hiking",
-    emoji: "🥾",
-    left: "35%",
-    top: "40%",
-  },
-  {
-    title: "Fitness",
-    emoji: "🏋",
-    left: "65%",
-    top: "45%",
-  },
-  {
-    title: "Music",
-    emoji: "🎵",
-    left: "5%",
-    top: "65%",
-  },
-  {
-    title: "Reading",
-    emoji: "📖",
-    left: "45%",
-    top: "75%",
-  },
-];
+const toolboxItems = portfolioData.toolbox.map((item) => ({
+  title: item.title,
+  iconType: toolboxIcons[item.iconKey],
+}));
+
+const hobbies = portfolioData.hobbies;
 
 export const AboutSection = () => {
-  const name = process.env.NEXT_PUBLIC_NAME;
+  const name = process.env.NEXT_NAME;
   const constraintRef = useRef(null);
   return (
     <div id="about" className="py-20 lg:py-28">
@@ -126,7 +71,7 @@ export const AboutSection = () => {
                 onMouseLeave={() => {
                   document.body.classList.remove(
                     "cursor-grab",
-                    "cursor-grabbing"
+                    "cursor-grabbing",
                   );
                 }}
               >

@@ -3,13 +3,19 @@
 import React, { useState, useEffect } from "react";
 import SectionScroller from "@/components/SectionScroller";
 
-type SectionId = "hero" | "projects" | "about" | "contact";
+type SectionId = "hero" | "projects" | "experience" | "about" | "contact";
 
 export const Header: React.FC = () => {
   const [activeSection, setActiveSection] = useState<SectionId>("hero");
 
   useEffect(() => {
-    const sections = ["hero", "projects", "about", "contact"] as SectionId[];
+    const sections = [
+      "hero",
+      "projects",
+      "experience",
+      "about",
+      "contact",
+    ] as SectionId[];
     const observerOptions = {
       root: null,
       rootMargin: "0px",
@@ -57,6 +63,12 @@ export const Header: React.FC = () => {
           className={getNavButtonClass("projects")}
         >
           Projects
+        </SectionScroller>
+        <SectionScroller
+          targetId="experience"
+          className={getNavButtonClass("experience")}
+        >
+          Experience
         </SectionScroller>
         <SectionScroller
           targetId="about"
