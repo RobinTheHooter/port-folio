@@ -1,15 +1,7 @@
 import ArrowRightUpIcon from "@/assets/icons/arrow-up-right.svg";
+import portfolioData from "@/data/portfolio.json";
 
-const footerLinks = [
-  {
-    title: "GitHub",
-    href: "https://github.com/RobinTheHooter",
-  },
-  {
-    title: "LinkedIn",
-    href: "https://www.linkedin.com/in/jatin-chandra-choudhary-142283238/",
-  },
-];
+const footerLinks = portfolioData.footerLinks;
 
 export const Footer = () => {
   return (

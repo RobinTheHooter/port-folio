@@ -1,49 +1,23 @@
 import streetFighter from "@/assets/images/street-fighter.png";
 import spaceWebsite from "@/assets/images/space-website.png";
 import amazonClone from "@/assets/images/amazon-clone.png";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
+import portfolioData from "@/data/portfolio.json";
 
-const portfolioProjects = [
-  {
-    company: "Capcom",
-    year: "2024",
-    title: "Street Fighter (WIP)",
-    results: [
-      { title: "Improved controls and performance" },
-      { title: "Click on the screen to start" },
-      { title: "HTML, CSS, JavaScript" },
-    ],
-    link: "https://street-fighter-web.netlify.app/",
-    image: streetFighter,
-  },
-  {
-    company: "Frontend Mentor Challenge",
-    year: "2023",
-    title: "Space Station",
-    results: [
-      { title: "Mobile Responsive" },
-      { title: "HTML, CSS, JavaScript" },
-    ],
-    link: "https://space-web-12.netlify.app/",
-    image: spaceWebsite,
-  },
-  {
-    company: "Amazon",
-    year: "2021",
-    title: "Amazon Clone",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "ReactJS" },
-    ],
-    link: "https://amazon-clonex.netlify.app/",
-    image: amazonClone,
-  },
-];
+const projectImages: Record<string, StaticImageData> = {
+  streetFighter,
+  spaceWebsite,
+  amazonClone,
+};
+
+const portfolioProjects = portfolioData.projects.map((project) => ({
+  ...project,
+  image: projectImages[project.imageKey],
+}));
 
 export const ProjectsSection = () => {
   return (

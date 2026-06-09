@@ -1,19 +1,8 @@
 import StarIcon from "@/assets/icons/star.svg";
 import { Fragment } from "react";
+import portfolioData from "@/data/portfolio.json";
 
-const words = [
-  "Performant",
-  "Accessible",
-  "Secure",
-  "Interactive",
-  "Scalable",
-  "User Friendly",
-  "Responsive",
-  "Maintainable",
-  "Search Optimized",
-  "Usable",
-  "Reliable",
-];
+const words = portfolioData.tapeWords;
 
 export const TapeSection = () => {
   return (

@@ -1,0 +1,102 @@
+{
+  "experience": [
+    {
+      "role": "Jr. Frontend Developer",
+      "company": "Intech DC - Facts",
+      "location": "Thane, Maharashtra, India",
+      "period": "2025 — Present",
+      "description": "Collaborating with cross-functional teams to deliver features for consumer-facing applications",
+      "highlights": [
+        "Built Smart TV Application's frontend features using ReactJS and Shaka Player",
+        "Implemented real-time data handling, optimistic updates, and query caching using TanStack Query",
+        "Worked on streaming playback debugging including DRM flows, AV sync analysis, and live latency handling"
+      ],
+      "tags": [
+        "ReactJS",
+        "TanStack Query",
+        "Shaka Player",
+        "JavaScript",
+        "Zustand",
+        "REST APIs",
+        "WebSockets"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "company": "Capcom",
+      "year": "2024",
+      "title": "Street Fighter (WIP)",
+      "imageKey": "streetFighter",
+      "results": [
+        { "title": "Improved controls and performance" },
+        { "title": "Click on the screen to start" },
+        { "title": "HTML, CSS, JavaScript" }
+      ],
+      "link": "https://street-fighter-web.netlify.app/"
+    },
+    {
+      "company": "Frontend Mentor Challenge",
+      "year": "2023",
+      "title": "Space Station",
+      "imageKey": "spaceWebsite",
+      "results": [
+        { "title": "Mobile Responsive" },
+        { "title": "HTML, CSS, JavaScript" }
+      ],
+      "link": "https://space-web-12.netlify.app/"
+    },
+    {
+      "company": "Amazon",
+      "year": "2021",
+      "title": "Amazon Clone",
+      "imageKey": "amazonClone",
+      "results": [
+        { "title": "Enhanced user experience by 40%" },
+        { "title": "Improved site speed by 50%" },
+        { "title": "ReactJS" }
+      ],
+      "link": "https://amazon-clonex.netlify.app/"
+    }
+  ],
+  "toolbox": [
+    { "title": "JavaScript", "iconKey": "javascript" },
+    { "title": "HTML5", "iconKey": "html" },
+    { "title": "CSS3", "iconKey": "css" },
+    { "title": "React", "iconKey": "react" },
+    { "title": "Chrome", "iconKey": "chrome" },
+    { "title": "GitHub", "iconKey": "github" }
+  ],
+  "hobbies": [
+    { "title": "Drawing", "emoji": "🎨", "left": "5%", "top": "5%" },
+    { "title": "Photography", "emoji": "📷", "left": "50%", "top": "5%" },
+    { "title": "Gaming", "emoji": "🖥️", "left": "10%", "top": "35%" },
+    { "title": "Hiking", "emoji": "🥾", "left": "35%", "top": "40%" },
+    { "title": "Fitness", "emoji": "🏋", "left": "65%", "top": "45%" },
+    { "title": "Music", "emoji": "🎵", "left": "5%", "top": "65%" },
+    { "title": "Reading", "emoji": "📖", "left": "45%", "top": "75%" }
+  ],
+  "tapeWords": [
+    "Performant",
+    "Accessible",
+    "Secure",
+    "Interactive",
+    "Scalable",
+    "User Friendly",
+    "Responsive",
+    "Maintainable",
+    "Search Optimized",
+    "Usable",
+    "Reliable"
+  ],
+  "footerLinks": [
+    {
+      "title": "GitHub",
+      "href": "https://github.com/RobinTheHooter"
+    },
+    {
+      "title": "LinkedIn",
+      "href": "https://www.linkedin.com/in/jatin-chandra-choudhary-142283238/"
+    }
+  ]
+}

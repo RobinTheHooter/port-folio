@@ -1,4 +1,4 @@
-import cat from "@/assets/images/cat.png";
+import cat from "@/assets/images/cat.webp";
 import Image from "next/image";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
 import GrainImage from "@/assets/images/grain.jpg";
@@ -6,7 +6,7 @@ import { HeroSparkles } from "@/components/HeroSparkles";
 import SectionScroller from "@/components/SectionScroller";
 
 export const HeroSection = () => {
-  const email = process.env.NEXT_PUBLIC_EMAIL;
+  const email = process.env.NEXT_EMAIL;
 
   return (
     <div id="hero" className="py-32 md:py-48 lg:py-60 relative overflow-x-clip">
