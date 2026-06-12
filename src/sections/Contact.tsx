@@ -323,14 +323,14 @@ export const ContactSection = () => {
                   and exit transitions when the Card is semi-transparent */}
               <div
                 aria-hidden="true"
-                className={`absolute -inset-6 rounded-3xl blur-2xl -z-10 opacity-60 ${
+                className={`absolute -inset-6 rounded-3xl blur-2xl z-0 opacity-60 ${
                   sent
                     ? "bg-gradient-to-r from-emerald-300 to-sky-400"
                     : "bg-gradient-to-r from-red-400 to-orange-400"
                 }`}
               />
 
-              <Card className="p-8 md:p-10 text-center overflow-visible">
+              <Card className="relative z-10 p-8 md:p-10 text-center overflow-visible">
                 <div className="relative">
                   {sent ? <SuccessIcon /> : <ErrorIcon />}
                 </div>

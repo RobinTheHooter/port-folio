@@ -1,6 +1,7 @@
 import streetFighter from "@/assets/images/street-fighter.png";
 import spaceWebsite from "@/assets/images/space-website.png";
-import amazonClone from "@/assets/images/amazon-clone.png";
+import idc from "@/assets/images/idc.webp";
+import mytv from "@/assets/images/mytv.webp";
 import Image, { StaticImageData } from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -11,7 +12,8 @@ import portfolioData from "@/data/portfolio.json";
 const projectImages: Record<string, StaticImageData> = {
   streetFighter,
   spaceWebsite,
-  amazonClone,
+  idc,
+  mytv,
 };
 
 const portfolioProjects = portfolioData.projects.map((project) => ({
@@ -59,12 +61,14 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link} target="_blank">
-                    <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                      <span>Visit Live Site</span>
-                      <ArrowUpRightIcon className="size-4" />
-                    </button>
-                  </a>
+                  {project.link && (
+                    <a href={project.link} target="_blank">
+                      <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                        <span>Visit Live Site</span>
+                        <ArrowUpRightIcon className="size-4" />
+                      </button>
+                    </a>
+                  )}
                 </div>
                 <div className="relative">
                   <Image

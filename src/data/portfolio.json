@@ -9,7 +9,8 @@
       "highlights": [
         "Built Smart TV Application's frontend features using ReactJS and Shaka Player",
         "Implemented real-time data handling, optimistic updates, and query caching using TanStack Query",
-        "Worked on streaming playback debugging including DRM flows, AV sync analysis, and live latency handling"
+        "Worked on streaming playback debugging including DRM flows, AV sync analysis, and live latency handling",
+        "Built an in-house cloud infrastructure monitoring portal for the Cloud team"
       ],
       "tags": [
         "ReactJS",
@@ -18,13 +19,43 @@
         "JavaScript",
         "Zustand",
         "REST APIs",
-        "WebSockets"
+        "WebSockets",
+        "Flask",
+        "Python",
+        "Gitlab CI/CD",
+        "Docker"
       ]
     }
   ],
   "projects": [
     {
-      "company": "Capcom",
+      "company": "Intech DC",
+      "year": "2025 - Present",
+      "title": "Intech DC Monitoring",
+      "imageKey": "idc",
+      "results": [
+        { "title": "Built a client-side TTL cache with event-driven invalidation, reducing API traffic by ~4×" },
+        { "title": "Unified timezone handling by migrating backend endpoints to UTC and centralizing frontend rendering" },
+        { "title": "Eliminated false-UNKNOWN hardware states by optimizing polling and timeouts" },
+        { "title": "Python, Flask, ReactJS, TailwindCSS, SQLite, Docker, GitLab CI/CD" }
+      ],
+      "link": ""
+    },
+    {
+      "company": "Intech DC",
+      "year": "2025 - Present",
+      "title": "MyTV",
+      "imageKey": "mytv",
+      "results": [
+        { "title": "Optimized Data Fetching & Cache Management for Live TV Navigation" },
+        { "title": "Built TV-Optimized Navigation System Using Spatial Focus Management" },
+        { "title": "Diagnosed and Resolved Live Streaming Playback & Synchronization Issues" },
+        { "title": "ReactJS, Zustand, Norigin Spatial Navigation, TanStack Query" }
+      ],
+      "link": ""
+    },
+    {
+      "company": "Game",
       "year": "2024",
       "title": "Street Fighter (WIP)",
       "imageKey": "streetFighter",
@@ -45,18 +76,6 @@
         { "title": "HTML, CSS, JavaScript" }
       ],
       "link": "https://space-web-12.netlify.app/"
-    },
-    {
-      "company": "Amazon",
-      "year": "2021",
-      "title": "Amazon Clone",
-      "imageKey": "amazonClone",
-      "results": [
-        { "title": "Enhanced user experience by 40%" },
-        { "title": "Improved site speed by 50%" },
-        { "title": "ReactJS" }
-      ],
-      "link": "https://amazon-clonex.netlify.app/"
     }
   ],
   "toolbox": [
@@ -65,7 +84,10 @@
     { "title": "CSS3", "iconKey": "css" },
     { "title": "React", "iconKey": "react" },
     { "title": "Chrome", "iconKey": "chrome" },
-    { "title": "GitHub", "iconKey": "github" }
+    { "title": "GitHub", "iconKey": "github" },
+    { "title": "Docker", "iconKey": "docker" },
+    { "title": "TanStack Query", "iconKey": "tanstack" },
+    { "title": "Gitlab", "iconKey": "gitlab" }
   ],
   "hobbies": [
     { "title": "Drawing", "emoji": "🎨", "left": "5%", "top": "5%" },

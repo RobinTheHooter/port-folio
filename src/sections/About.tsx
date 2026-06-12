@@ -9,8 +9,9 @@ import CSSIcon from "@/assets/icons/css3.svg";
 import ReactIcon from "@/assets/icons/react.svg";
 import ChromeIcon from "@/assets/icons/chrome.svg";
 import GitHubIcon from "@/assets/icons/github.svg";
-import MapImage from "@/assets/images/map.png";
-import SmileEmoji from "@/assets/images/memoji-smile.png";
+import DockerIcon from "@/assets/icons/docker.svg";
+import GitlabIcon from "@/assets/icons/gitlab.svg";
+import TanStackIcon from "@/assets/icons/tanstack.svg";
 import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import { motion } from "framer-motion";
@@ -24,6 +25,9 @@ const toolboxIcons: Record<string, typeof JavaScriptIcon> = {
   react: ReactIcon,
   chrome: ChromeIcon,
   github: GitHubIcon,
+  docker: DockerIcon,
+  gitlab: GitlabIcon,
+  tanstack: TanStackIcon
 };
 
 const toolboxItems = portfolioData.toolbox.map((item) => ({
