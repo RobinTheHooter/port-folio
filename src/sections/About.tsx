@@ -38,7 +38,7 @@ const toolboxItems = portfolioData.toolbox.map((item) => ({
 const hobbies = portfolioData.hobbies;
 
 export const AboutSection = () => {
-  const name = process.env.NEXT_NAME;
+  const name = process.env.NEXT_PUBLIC_NAME;
   const constraintRef = useRef(null);
   return (
     <div id="about" className="py-20 lg:py-28">
